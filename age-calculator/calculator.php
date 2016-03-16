@@ -2,8 +2,14 @@
 class Common {
 	public function calculate_age($bdate, $saildate)
 	{
+		$bdate = new DateTime($bdate);  
 	    $saildate = new DateTime($saildate);
-	    $diff = $saildate->diff(new DateTime($bdate));
+
+	    if ($bdate > $saildate) {
+	    	return false;
+	    }
+
+	    $diff = $saildate->diff($bdate);
 
 	    if ($diff->y)
 	    {

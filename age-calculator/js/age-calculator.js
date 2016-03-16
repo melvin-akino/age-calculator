@@ -1,4 +1,6 @@
 $(function() {
+    $("#success").css('display','none');
+    $("#failed").css('display','none');
     $( "#birthdate" ).datepicker({yearRange:'1900:c+1'});
     $( "#birthdate" ).datepicker( "option", "changeYear", true );
     $( "#birthdate" ).datepicker( "option", "changeMonth", true );
@@ -8,6 +10,7 @@ $(function() {
 
     $("button[type=reset]").click(function() {
         $("#result").css('display','none');
+        $("#failed").css('display','none');
     });     
 });
 $(document).ready(function() {
@@ -23,15 +26,15 @@ $(document).ready(function() {
             }
         })
         .done(function( data ) {
-            $("#result").css('display','block');
             if (data.result) {
+                $("#success").css('display','block');
                 $("#result-text").html(data.result);
                 $('#age-calculator').each(function(){
                     this.reset();
                 });    
             }
             else {
-                alert("error");
+                $("#failed").css('display','block');
             }
         });
 

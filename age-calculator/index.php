@@ -15,10 +15,17 @@
             <h1><img src="../CommonObjects/images/logo.png" /><small>Age Calculator</small></h1>
         </div>                                                     
         <div class="container">
-            <div id="result" class="row">
+            <div id="success" class="row">
                 <div class="col-lg-6">
                     <div class="alert alert-success">
                         <strong><span class="glyphicon glyphicon-ok"></span> Result: <span id="result-text">[Result Here]</span></strong>
+                    </div>
+                </div>
+            </div>
+            <div id="failed" class="row">
+                <div class="col-lg-6">
+                    <div class="alert alert-danger">
+                        <span class="glyphicon glyphicon-remove"></span><strong id='error-msg'> Date of Birth has to be less than the Sailing Date</strong>
                     </div>
                 </div>
             </div>
