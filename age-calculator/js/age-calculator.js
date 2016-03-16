@@ -15,6 +15,8 @@ $(function() {
 });
 $(document).ready(function() {
     $("#age-calculator").submit(function(event) {
+        $("#success").css('display','none');
+        $("#failed").css('display','none');
         $.ajax({
             method: "POST",
             url: $(this).attr('action'),
