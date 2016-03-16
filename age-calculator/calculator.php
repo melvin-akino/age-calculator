@@ -5,7 +5,7 @@ class Common {
 		$bdate = new DateTime($bdate);  
 	    $saildate = new DateTime($saildate);
 
-	    if ($bdate > $saildate) {
+	    if ($bdate >= $saildate) {
 	    	return false;
 	    }
 
