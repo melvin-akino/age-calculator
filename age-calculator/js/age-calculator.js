@@ -14,7 +14,7 @@ $(function() {
     });     
 });
 $(document).ready(function() {
-    $("#result").css('display','none');
+    $("#success").css('display','none');
     $("#age-calculator").submit(function(event) {
         $.ajax({
             method: "POST",
