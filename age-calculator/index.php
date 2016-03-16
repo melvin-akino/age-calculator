@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -10,10 +10,10 @@
     <link rel="stylesheet" type="text/css" href="css/age-calculator.css" />    
 </head>
 <body>
-    <div class="container">
+    <div class="container">                                                                                  
         <div class="page-header">            
             <h1><img src="../CommonObjects/images/logo.png" /><small>Age Calculator</small></h1>
-        </div>
+        </div>                                                     
         <div class="container">
             <div id="result" class="row">
                 <div class="col-lg-6">
@@ -26,14 +26,14 @@
                 <form id="age-calculator" role="form" action="calculator.php" method="post">
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <label for="birthdate">Birthdate</label>
+                            <label for="birthdate">Birth Date</label>
                             <div class="input-group">
                                 <input type="text" class="form-control" name="birthdate" id="birthdate" placeholder="mm/dd/yyyy" required>
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="saildate">Saildate</label>
+                            <label for="saildate">Sail Date</label>
                             <div class="input-group">
                                 <input type="text" class="form-control" id="saildate" name="saildate" placeholder="mm/dd/yyyy" required>
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
