@@ -9,12 +9,11 @@ $(function() {
     $( "#saildate" ).datepicker( "option", "changeMonth", true );
 
     $("button[type=reset]").click(function() {
-        $("#result").css('display','none');
+        $("#success").css('display','none');
         $("#failed").css('display','none');
     });     
 });
 $(document).ready(function() {
-    $("#success").css('display','none');
     $("#age-calculator").submit(function(event) {
         $.ajax({
             method: "POST",
