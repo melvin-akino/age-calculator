@@ -1,5 +1,5 @@
 $(function() {
-    $( "#birthdate" ).datepicker({yearRange:'1900:now', maxDate:'now'});
+    $( "#birthdate" ).datepicker({yearRange:'1900:c+1'});
     $( "#birthdate" ).datepicker( "option", "changeYear", true );
     $( "#birthdate" ).datepicker( "option", "changeMonth", true );
     $( "#saildate" ).datepicker({yearRange:'1900:c+20'});
