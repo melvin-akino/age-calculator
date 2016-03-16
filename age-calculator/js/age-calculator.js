@@ -2,7 +2,7 @@ $(function() {
     $( "#birthdate" ).datepicker({yearRange:'1900:now', maxDate:'now'});
     $( "#birthdate" ).datepicker( "option", "changeYear", true );
     $( "#birthdate" ).datepicker( "option", "changeMonth", true );
-    $( "#saildate" ).datepicker({yearRange:'c-50:c+20'});
+    $( "#saildate" ).datepicker({yearRange:'1900:c+20'});
     $( "#saildate" ).datepicker( "option", "changeYear", true );
     $( "#saildate" ).datepicker( "option", "changeMonth", true );
 
